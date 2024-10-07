@@ -1,0 +1,58 @@
+/* Styles for the login form container */
+form {
+  max-width: 400px; /* Limit the width of the form */
+  margin: 50px auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding inside the form */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styles for input fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Make the input fields full width */
+  padding: 10px; /* Add padding inside the input */
+  margin: 10px 0; /* Space between input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Change border color on focus */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Styles for labels */
+label {
+  font-weight: bold; /* Make labels bold */
+  display: block; /* Make labels block elements for better spacing */
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Styles for error messages */
+small {
+  color: red; /* Red color for error messages */
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Styles for the submit button */
+button[type="submit"] {
+  width: 100%; /* Make the button full width */
+  padding: 10px; /* Add padding inside the button */
+  background-color: #007bff; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Slightly rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Change background color on hover */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
