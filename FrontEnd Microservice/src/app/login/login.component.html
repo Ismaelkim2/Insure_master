@@ -18,5 +18,9 @@
     </div>
   
     <button type="submit" [disabled]="loginForm.invalid">Login</button>
+
+    <div *ngIf="successmessage" class="text-success">
+      Logged in Successfull.
+    </div>
   </form>
   

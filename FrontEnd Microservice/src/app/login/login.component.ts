@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms'; // Import FormBuilder
-import { LoginService } from '../login.service'; // Import the LoginService
+import { FormBuilder, FormGroup, Validators } from '@angular/forms'; 
+import { LoginService } from '../login.service';
 
 @Component({
   selector: 'app-login',
@@ -10,6 +10,8 @@ import { LoginService } from '../login.service'; // Import the LoginService
 })
 export class LoginComponent {
   loginForm: FormGroup; 
+  loginsuccess:string=''
+  successmessage:boolean=false;
 
   constructor(private fb: FormBuilder, private loginService: LoginService) {
     this.loginForm = this.fb.group({
@@ -34,6 +36,11 @@ export class LoginComponent {
     } else {
       console.log('Form is not valid');
     }
-  }
+    this.successmessage=true;
+
+    setTimeout(()=>{
+      this.successmessage=false;
+    },2000
+  )};
   
 }
